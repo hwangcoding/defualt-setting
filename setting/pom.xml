@@ -92,14 +92,6 @@
 			<artifactId>javax.inject</artifactId>
 			<version>1</version>
 		</dependency>
-				
-		<!-- Servlet -->
-		<!-- <dependency>
-			<groupId>javax.servlet</groupId>
-			<artifactId>servlet-api</artifactId>
-			<version>2.5</version>
-			<scope>provided</scope>
-		</dependency> -->
 		
 		<dependency>
 			<groupId>javax.servlet</groupId>
@@ -115,11 +107,51 @@
 			<scope>provided</scope>
 		</dependency>
 		
+		<!-- jstl  -->
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>jstl</artifactId>
 			<version>1.2</version>
 		</dependency>
+		
+		<!--====================================== DB 관련  -->
+		
+		<!-- jdbc -->
+		<dependency>
+		    <groupId>org.springframework</groupId>
+		    <artifactId>spring-jdbc</artifactId>
+		    <version>${org.springframework-version}</version>
+		</dependency>
+
+		<!-- db 커넥션 풀 -->
+		<dependency>
+		 	<groupId>org.apache.commons</groupId>
+		 	<artifactId>commons-dbcp2</artifactId>
+		 	<version>2.6.0</version>
+		</dependency>
+		
+		<!-- MySQL JDBC  -->
+		<dependency>
+		 	<groupId>mysql</groupId>
+		  	<artifactId>mysql-connector-java</artifactId>
+		  <version>8.0.15</version>
+		</dependency>
+
+		<!-- MyBatis 라이브러리 -->
+		<dependency>
+		    <groupId>org.mybatis</groupId>
+		    <artifactId>mybatis</artifactId>
+		    <version>3.5.0</version>
+		</dependency>
+
+		<!-- 마이바티스와 스프링 연동을 위한 라이브러리 -->
+		<dependency>
+		    <groupId>org.mybatis</groupId>
+		    <artifactId>mybatis-spring</artifactId>
+		    <version>2.0.0</version>
+		</dependency>
+
+		<!--====================================== DB 관련  끝-->
 	
 		<!-- Test -->
 		<dependency>

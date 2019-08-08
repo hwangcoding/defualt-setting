@@ -38,15 +38,14 @@ public class DispatcherServlet extends WebMvcConfigurerAdapter{
     }
 
 
+    /* 정적파일 처리 핸들러 */
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
     	registry.addResourceHandler("/resources/**").addResourceLocations("/resources/");
     }
 
     
-	/* 인터셉터
-	 * @see org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter#addInterceptors(org.springframework.web.servlet.config.annotation.InterceptorRegistry)
-	 */
+	/* 인터셉터 */
 	@Override
 	public void addInterceptors(InterceptorRegistry registry) {
 		registry.addInterceptor(new Interceptor()).excludePathPatterns("/");
