@@ -49,7 +49,6 @@ public class ContextSqlMapper {
         sqlSessionFactoryBean.setDataSource(dataSource);
         sqlSessionFactoryBean.setConfigLocation(applicationContext.getResource("classpath:/mybatis/config/mybatis-config.xml"));
         sqlSessionFactoryBean.setMapperLocations(applicationContext.getResources("classpath:/mybatis/mapper/*.xml"));
-        LOGGER.info("sqlSessionFactory : "+dataSource.hashCode());
         return sqlSessionFactoryBean.getObject();
     }
     

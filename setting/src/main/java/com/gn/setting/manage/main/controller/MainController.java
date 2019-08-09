@@ -11,7 +11,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.gn.setting.HomeController;
+import com.gn.setting.configuration.session.UserSessionManager;
 import com.gn.setting.manage.main.dao.MainDAO;
 
 /**
@@ -30,26 +30,28 @@ import com.gn.setting.manage.main.dao.MainDAO;
  *
  */
 @Controller
+@RequestMapping("/")
 public class MainController {
 
-	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
+	private static final Logger logger = LoggerFactory.getLogger(MainController.class);
 		
 	@Autowired
 	MainDAO mainDAO;
 	
 	
-	@RequestMapping("/home.do")
-	public String home1(Locale locale, Model model) {
+	@RequestMapping("main.do")
+	public String mainView(Locale locale, Model model) {
 		
 		String str = mainDAO.test();
 		Date date = new Date();
-		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
+		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG
+																					, DateFormat.LONG, locale);
 		
 		String formattedDate = dateFormat.format(date);
 		
 		model.addAttribute("serverTime", formattedDate );
 		
-		return "home";
+		return "main/main";
 	}
 	
 }

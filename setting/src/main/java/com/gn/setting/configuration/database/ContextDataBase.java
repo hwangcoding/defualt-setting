@@ -43,7 +43,7 @@ public class ContextDataBase {
 		dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
 		dataSource.setUrl("jdbc:mysql://test.cafe24.com:3306/test?serverTimezone=UTC&useSSL=false");
 		dataSource.setUsername("test");
-		dataSource.setPassword("123456!@");
+		dataSource.setPassword("1234567!@");
 		dataSource.setDefaultAutoCommit(false);
 		return dataSource;
 	}
