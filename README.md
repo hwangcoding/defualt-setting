@@ -2,6 +2,9 @@
 ###### JDBC, MYBATIS, MYSQL 추가
 ###### index page 설정
 ###### tiles 설정
+###### junit, spring-test 설정
+
+
 
 
 
