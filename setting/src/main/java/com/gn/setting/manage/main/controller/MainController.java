@@ -10,8 +10,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.View;
 
-import com.gn.setting.configuration.session.UserSessionManager;
+import com.gn.setting.common.resolver.JsonView;
 import com.gn.setting.manage.main.dao.MainDAO;
 
 /**
@@ -52,6 +53,14 @@ public class MainController {
 		model.addAttribute("serverTime", formattedDate );
 		
 		return "main/main";
+	}
+	
+	@RequestMapping("test.do")
+	public View testJsonView(Model model) {
+		model.addAttribute("test","JSONVIEW TEST");
+		model.addAttribute("test2","JSONVIEW TEST");
+		
+		return new JsonView();
 	}
 	
 }

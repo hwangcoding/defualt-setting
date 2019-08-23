@@ -5,8 +5,14 @@
  
 <tiles-definitions>
 
-    <definition name="*/*" extends="base">
+	<!-- main -->
+    <definition name="main/*" extends="base">
         <put-attribute name="body" value="/WEB-INF/jsp/main/{1}.jsp" />
+    </definition>
+    
+    <!-- user -->
+    <definition name="user/*" extends="base">
+        <put-attribute name="body" value="/WEB-INF/jsp/user/{1}.jsp" />
     </definition>
  
 </tiles-definitions>
