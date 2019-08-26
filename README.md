@@ -1,9 +1,20 @@
+## 2019.08.23
+###### jsonview resolver 추가
+###### webSocket 추가예정..
+    
+    
+    
+
+
+
+
+
 ## 2019.08.09
 ###### JDBC, MYBATIS, MYSQL 추가
 ###### index page 설정
 ###### tiles 설정
 ###### junit, spring-test 설정
-
+    
 
 
 
