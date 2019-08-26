@@ -1,3 +1,9 @@
+## 2019.08.26
+###### webSocket 설정
+###### servlet 3.0 + asyc 
+
+
+
 ## 2019.08.23
 ###### jsonview resolver 추가
 ###### webSocket 추가예정..
