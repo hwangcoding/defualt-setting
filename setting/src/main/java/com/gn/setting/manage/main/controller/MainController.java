@@ -12,8 +12,8 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.View;
 
-import com.gn.setting.common.resolver.JsonView;
 import com.gn.setting.manage.main.dao.MainDAO;
+import com.gn.setting.util.resolver.JsonView;
 
 /**
  * @Class MainController.java

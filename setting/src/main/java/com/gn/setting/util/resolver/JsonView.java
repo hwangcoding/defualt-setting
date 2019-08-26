@@ -1,4 +1,4 @@
-package com.gn.setting.common.resolver;
+package com.gn.setting.util.resolver;
 
 import java.util.HashMap;
 import java.util.Map;
